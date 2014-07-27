@@ -6,8 +6,7 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
-
+gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,7 +24,7 @@ end
 
 group :development do
   gem 'rspec-rails', '~> 2.0'
-
+  gem 'sqlite3'
   gem 'guard'
   gem 'growl'
   gem 'guard-rspec'
@@ -39,7 +38,7 @@ group :test do
   gem 'rspec-rails', "~> 2.0"
   gem 'shoulda'
   gem 'factory_girl_rails'
-
+  gem "sqlite3"
   gem 'cucumber-rails', :require => false
   gem 'cucumber-websteps'
   gem 'pickle'
